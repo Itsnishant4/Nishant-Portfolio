@@ -68,7 +68,13 @@ export function ProjectCard({
           <div className="relative h-40 w-full overflow-hidden">
             {isLoading && (
               <div className="absolute inset-0 flex items-center justify-center bg-black/10 backdrop-blur-sm z-20">
-                <Loader2 className="h-6 w-6 animate-spin text-primary" />
+              <div className="grid h-full max-h-[300px] min-h-[160px] w-full max-w-xs animate-pulse place-items-center rounded-lg bg-gray-300">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"className="w-12 h-12 text-gray-500">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z">
+    </path>
+  </svg>
+</div>
               </div>
             )}
             <video
