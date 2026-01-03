@@ -144,7 +144,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/Aitodo.mov",
+      video: "/1767434258043-Aitodo.webm",
     },
     {
       title: "Onboarding Screen React",
@@ -167,7 +167,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/onboardingscreen.mp4",
+      video: "/1767434505225-onboardingscreen.webm",
     },
     {
       title: "Brand-CN",
@@ -185,7 +185,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/brand-cn.mp4",
+      video: "/1767434279869-brand-cn.webm",
     },
     {
       title: "Project Management App",
@@ -203,7 +203,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/project-management.mp4",
+      video: "/1767434634949-project-management.webm",
     },
     {
       title: "Prddiam",
@@ -227,7 +227,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/prddiam.mov",
+      video: "/1767434621017-prddiam.webm",
     },
     {
       title: "Divine Creation",
@@ -251,7 +251,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/divine.mov",
+      video: "/1767434400093-divine.webm",
     },
     {
       title: "Kasba Natural",
@@ -268,7 +268,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/kasba.mov",
+      video: "/1767434434747-kasba.webm",
     },
     {
       title: "NSM Roadways CRM",
@@ -292,7 +292,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/nsm.mov",
+      video: "/1767434462994-nsm.webm",
     },
     {
       title: "Nwallpaper",
