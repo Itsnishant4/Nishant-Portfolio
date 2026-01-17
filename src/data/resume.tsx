@@ -13,32 +13,22 @@ export const DATA = {
     "Full-stack developer with strong expertise in React.js, Next.js, Laravel, and Node.js. Experienced in developing scalable MERN applications, dynamic dashboards, automation tools, and e-commerce platforms. Skilled in API integrations, Shopify store development, performance optimization, and Agile development workflows.",
   avatarUrl: "/me.webp",
   skills: [
-    "React.js",
-    "Next.js",
-    "React Native",
-    "Redux Toolkit",
-    "HTML5",
-    "CSS3",
-    "Tailwind CSS",
-    "JavaScript",
+    "JavaScript (ES6+)",
     "TypeScript",
+    "React",
+    "Next.js",
     "Node.js",
-    "Express.js",
-    "Laravel",
-    "GraphQL",
+    "Tailwind CSS",
     "REST APIs",
-    "Shopify & Liquid",
-    "MySQL",
+    "Redux",
+    "AWS",
+    "PostgreSQL",
+    "Firebase",
     "MongoDB",
-    "Redis Caching",
-    "Database Optimization",
-    "JSON & Data Modeling",
-    "Docker",
-    "CI/CD",
-    "JWT Auth",
     "Git",
-    "GitHub",
-    "Postman",
+    "Docker",
+    "Prisma",
+    "Java",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -57,8 +47,20 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/nishant-patel",
+        url: "https://www.linkedin.com/in/nishant-patel-295203283/",
         icon: Icons.linkedin,
+        navbar: true,
+      },
+      YouTube: {
+        name: "YouTube",
+        url: "https://www.youtube.com/@codewithnishant4",
+        icon: Icons.youtube,
+        navbar: true,
+      },
+      Instagram: {
+        name: "Instagram",
+        url: "https://www.instagram.com/nishant_mov",
+        icon: Icons.instagram,
         navbar: true,
       },
       email: {
@@ -149,7 +151,7 @@ export const DATA = {
     {
       title: "Onboarding Screen React",
       href: "https://onbording-screen-react.vercel.app/",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "NPM package for building customizable onboarding screens in React. It provides a simple and flexible way to create walkthroughs and tutorials for your web applications.",
@@ -172,7 +174,7 @@ export const DATA = {
     {
       title: "Brand-CN",
       href: "https://brand-cn.vercel.app/",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "Open-source project for applying Shadcn UI themes (ChatGPT, Gemini, etc.) to applications. It allows users to browse and integrate professional design systems with ease.",
@@ -190,7 +192,7 @@ export const DATA = {
     {
       title: "Project Management App",
       href: "https://project-management-iota-teal.vercel.app",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "Comprehensive project management tool with workspaces, invitation systems, and task management. Built for teams to collaborate effectively with real-time updates.",
@@ -208,7 +210,7 @@ export const DATA = {
     {
       title: "Prddiam",
       href: "https://www.prddiam.com",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "E-commerce platform - Developed a premium jewelry e-commerce store with advanced filtering, custom Liquid components, and SEO optimization.",
@@ -232,7 +234,7 @@ export const DATA = {
     {
       title: "Divine Creation",
       href: "https://www.divine-creation.in/",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "Astrology Informative web - Developed a comprehensive astrology website with user-friendly interface and information delivery.",
@@ -273,7 +275,7 @@ export const DATA = {
     {
       title: "NSM Roadways CRM",
       href: "https://nsmadmin.nsmroadways.com",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "ERP application for transporter CRM built with MERN stack, providing comprehensive management solutions for transportation operations.",
@@ -297,7 +299,7 @@ export const DATA = {
     {
       title: "Nwallpaper",
       href: "https://nwallpaper.apk.com/",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "Android Wallpaper App - Built a mobile wallpaper application with extensive wallpaper collection and user-friendly interface.",
@@ -322,7 +324,7 @@ export const DATA = {
     {
       title: "Earn4Day",
       href: "http://earn4day.great-site.net/?i=1",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "Android App with Database - Created a mobile application with comprehensive database functionality and user management features.",
@@ -347,7 +349,7 @@ export const DATA = {
     {
       title: "Eco Scan",
       href: "https://expo.dev/accounts/nixhant_4/projects/Demo/builds/637cf03d-6d5f-44dd-be89-4d9b0d68f028",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "Cross Platform App With React Native - Developed a cross-platform mobile application with modern React Native implementation.",
