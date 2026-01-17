@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, icons, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Nishant Patel",
@@ -13,22 +13,82 @@ export const DATA = {
     "Full-stack developer with strong expertise in React.js, Next.js, Laravel, and Node.js. Experienced in developing scalable MERN applications, dynamic dashboards, automation tools, and e-commerce platforms. Skilled in API integrations, Shopify store development, performance optimization, and Agile development workflows.",
   avatarUrl: "/me.webp",
   skills: [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Tailwind CSS",
-    "REST APIs",
-    "Redux",
-    "AWS",
-    "PostgreSQL",
-    "Firebase",
-    "MongoDB",
-    "Git",
-    "Docker",
-    "Prisma",
-    "Java",
+    {
+      name: "JavaScript",
+      icon: Icons.javascript,
+    },
+    {
+      name: "TypeScript",
+      icon: Icons.typescript,
+    },
+    {
+      name: "React",
+      icon: Icons.react,
+    },
+    {
+      name: "React Native",
+      icon: Icons.react,
+    },
+    {
+      name: "Next.js",
+      icon: Icons.nextjs,
+    },{
+      name: "Electron",
+      icon: Icons.electron,
+    },
+    {
+      name: "Node.js",
+      icon: Icons.nodejs,
+    },
+    {
+      name: "Laravel",
+      icon: Icons.laravel,
+    },
+    {
+      name: "Tailwind ",
+      icon: Icons.tailwindcss,
+    },
+    {
+      name: "REST ",
+      icon: Icons.api, // Fallback as no specific logo for REST APIs
+    },
+    {
+      name: "Motion ",
+      icon: Icons.framermotion, // Fallback as no specific logo for REST APIs
+    },
+    {
+      name: "Redux",
+      icon: Icons.redux,
+    }
+    ,
+    {
+      name: "MongoDB",
+      icon: Icons.mongodb,
+    },
+    {
+      name: "PostgreSQL",
+      icon: Icons.postgresql,
+    },
+    {
+      name: "Firebase",
+      icon: Icons.firebase,
+    },
+    {
+       name: "Prisma",
+       icon: Icons.prisma,
+     },
+    // {
+    //   name: "Git",
+    //   icon: Icons.git,
+    // },
+    // {
+    //   name: "Docker",
+    //   icon: Icons.docker,
+    // },
+    // {
+    //   name: "Prisma",
+    //   icon: Icons.prisma,
+    // },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
