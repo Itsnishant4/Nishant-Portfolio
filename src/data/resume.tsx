@@ -77,18 +77,22 @@ export const DATA = {
        name: "Prisma",
        icon: Icons.prisma,
      },
-    // {
-    //   name: "Git",
-    //   icon: Icons.git,
-    // },
-    // {
-    //   name: "Docker",
-    //   icon: Icons.docker,
-    // },
-    // {
-    //   name: "Prisma",
-    //   icon: Icons.prisma,
-    // },
+    {
+      name: "Git",
+      icon: Icons.github,
+    },
+    {
+      name: "Docker",
+      icon: Icons.docker,
+    },
+    {
+      name: "Linux",
+      icon: Icons.linux,
+    },
+    {
+      name: "GCP",
+      icon: Icons.googlecloud,
+    }
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
