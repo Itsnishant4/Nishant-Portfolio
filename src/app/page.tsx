@@ -138,35 +138,6 @@ export default function Page() {
         </div>
       </section>
       <section>
-        <BlurFade delay={BLUR_FADE_DELAY * 14}>
-
-          <div className="max-w-xl w-full    
-    rounded-3xl p-8 shadow-xl transition-all duration-300">
-
-
-            <p className="text-xl md:text-2xl font-semibold leading-relaxed 
-       mb-3">
-              कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।
-            </p>
-
-            <p className="text-sm md:text-base text-slate-600 dark:text-slate-300 mb-4">
-              You have the right to perform your prescribed actions,
-              but never to the fruits of those actions.
-            </p>
-
-            <div className="flex items-center justify-between pt-3 border-t 
-      border-slate-300 dark:border-slate-700">
-
-              <p className="text-xs md:text-sm italic text-slate-500 dark:text-slate-400">
-                “Focus on your duty, not the outcome.”
-              </p>
-
-
-
-            </div>
-          </div>
-        </BlurFade>
-
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
