@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,8 +7,6 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import "./globals.css";
-
-
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
@@ -75,13 +74,33 @@ export const metadata: Metadata = {
     images: [`/me.png`],
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
     other: [
-      { rel: 'icon', url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { rel: 'icon', url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { rel: 'icon', url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
-      { rel: 'icon', url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+      {
+        rel: "icon",
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
     ],
   },
   alternates: {
@@ -114,7 +133,7 @@ export const metadata: Metadata = {
         "@type": "EducationalOrganization",
         name: DATA.education[0].school,
       },
-      worksFor: DATA.work.map(company => ({
+      worksFor: DATA.work.map((company) => ({
         "@type": "Organization",
         name: company.company,
         jobTitle: company.title,
@@ -141,14 +160,15 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             {/* Your Content/Components */}
-            <div className="">
-              {children}
-            </div>
+            <div className="">{children}</div>
             <Toaster />
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
-        <script src="https://apple-emoji.vercel.app/script.js" />
+        <Script
+          src="https://apple-emoji.vercel.app/script.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
