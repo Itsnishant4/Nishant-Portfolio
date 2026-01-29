@@ -148,6 +148,7 @@ export default function RootLayout({
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
+        <script src="https://apple-emoji.vercel.app/script.js" />
       </body>
     </html>
   );
