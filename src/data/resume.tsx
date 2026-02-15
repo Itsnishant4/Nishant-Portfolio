@@ -358,7 +358,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/1767434462994-nsm.webm",
+      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147665730_1767434462994-nsm.webm?alt=media&token=391b099a-ec4e-420c-a993-8a7dcaa5d64c",
     },
     {
       title: "Nwallpaper",
