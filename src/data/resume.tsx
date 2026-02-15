@@ -210,7 +210,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/1767434258043-Aitodo.webm",
+      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147174028_1767434258043-Aitodo.webm?alt=media&token=d9530fa2-d57c-433a-9357-6d95ef4cfb33",
     },
     {
       title: "Onboarding Screen React",
@@ -233,7 +233,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/1767434505225-onboardingscreen.webm",
+      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147665731_1767434505225-onboardingscreen.webm?alt=media&token=18366fd4-23d8-46f2-bb77-108bc95d21e1",
     },
     {
       title: "Brand-CN",
@@ -251,7 +251,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/1767434279869-brand-cn.webm",
+      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147596063_1767434279869-brand-cn.webm?alt=media&token=a97568a3-18d6-449b-9be6-539ae43365dc",
     },
     {
       title: "Project Management App",
@@ -269,7 +269,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/1767434634949-project-management.webm",
+      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147743799_1767434634949-project-management.webm?alt=media&token=57bbabb7-662f-4a2c-a730-2ecbd8b14429",
     },
     {
       title: "Prddiam",
@@ -293,7 +293,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/1767434621017-prddiam.webm",
+      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147665731_1767434621017-prddiam.webm?alt=media&token=ff3b7974-8138-4738-9526-e8fab4a0c7e5",
     },
     {
       title: "Divine Creation",
@@ -317,7 +317,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/1767434400093-divine.webm",
+      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147596065_1767434400093-divine.webm?alt=media&token=1b1e446e-f572-411c-b33a-2009f4e11826",
     },
     {
       title: "Kasba Natural",
@@ -334,7 +334,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/1767434434747-kasba.webm",
+      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147596066_1767434434747-kasba.webm?alt=media&token=567201db-2726-4b31-8f26-eb6ab3141b5e",
     },
     {
       title: "NSM Roadways CRM",
