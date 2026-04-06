@@ -210,7 +210,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147174028_1767434258043-Aitodo.webm?alt=media&token=d9530fa2-d57c-433a-9357-6d95ef4cfb33",
+      video: "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/1767434258043-Aitodo%20(1).webm",
     },
     {
       title: "Onboarding Screen React",
@@ -233,7 +233,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147665731_1767434505225-onboardingscreen.webm?alt=media&token=18366fd4-23d8-46f2-bb77-108bc95d21e1",
+      video: "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/1767434505225-onboardingscreen.webm",
     },
     {
       title: "Brand-CN",
@@ -251,7 +251,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147596063_1767434279869-brand-cn.webm?alt=media&token=a97568a3-18d6-449b-9be6-539ae43365dc",
+      video: "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/1767434279869-brand-cn.webm",
     },
     {
       title: "Project Management App",
@@ -269,7 +269,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147743799_1767434634949-project-management.webm?alt=media&token=57bbabb7-662f-4a2c-a730-2ecbd8b14429",
+      video: "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/1767434634949-project-management.webm",
     },
     {
       title: "Prddiam",
@@ -293,7 +293,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147665731_1767434621017-prddiam.webm?alt=media&token=ff3b7974-8138-4738-9526-e8fab4a0c7e5",
+      video: "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/1767434621017-prddiam.webm",
     },
     {
       title: "Divine Creation",
@@ -317,7 +317,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147596065_1767434400093-divine.webm?alt=media&token=1b1e446e-f572-411c-b33a-2009f4e11826",
+      video: "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/1767434400093-divine.webm",
     },
     {
       title: "Kasba Natural",
@@ -334,7 +334,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147596066_1767434434747-kasba.webm?alt=media&token=567201db-2726-4b31-8f26-eb6ab3141b5e",
+      video: "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/1767434434747-kasba.webm",
     },
     {
       title: "NSM Roadways CRM",
@@ -358,7 +358,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1771147665730_1767434462994-nsm.webm?alt=media&token=391b099a-ec4e-420c-a993-8a7dcaa5d64c",
+      video: "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/1767434462994-nsm.webm",
     },
     {
       title: "Nwallpaper",
@@ -382,7 +382,7 @@ export const DATA = {
         },
       ],
       image:
-        "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1765024331613_nwallpaper.png?alt=media&token=8c879230-e984-41c4-8070-5492b1b574d2",
+        "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/nwallpaper.png",
       video: "",
     },
     {
@@ -407,7 +407,7 @@ export const DATA = {
         },
       ],
       image:
-        "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1765024526681_earn4day.png?alt=media&token=acdece32-f80a-47d4-a0a5-a2bed4eb2d70",
+        "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/earn4day.png",
       video: "",
     },
     {
@@ -432,7 +432,7 @@ export const DATA = {
         },
       ],
       image:
-        "https://firebasestorage.googleapis.com/v0/b/ganesha-9f5a9.appspot.com/o/uploads%2F1765024291349_Untitled%20design%20(2).png?alt=media&token=ecd73637-1201-484d-98bf-bb601fa1b2ee",
+        "https://cdn.jsdelivr.net/gh/Itsnishant4/images/images/2026/03/Untitled%20design%20(2).png",
       video: "",
     },
   ],
