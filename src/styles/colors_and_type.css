@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Nishant Patel Portfolio — Design Tokens
+   Dark mode default, light mode via [data-theme="light"]
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* ---------- Dark mode (default) ---------- */
+:root {
+  --bg:          #0f0f0f;
+  --bg-card:     #161616;
+  --bg-subtle:   #1c1c1c;
+  --border:      #2a2a2a;
+  --border-hover:#3a3a3a;
+
+  --fg:          #e8e8e8;
+  --fg-2:        #a0a0a0;
+  --fg-muted:    #666666;
+
+  --accent:      #e8e8e8;
+
+  --font:        'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:   'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+
+  --maxw:        760px;
+  --gutter:      clamp(20px, 5vw, 40px);
+  --nav-h:       56px;
+  --r:           4px;
+}
+
+/* ---------- Light mode ---------- */
+[data-theme="light"] {
+  --bg:          #fafafa;
+  --bg-card:     #ffffff;
+  --bg-subtle:   #f3f3f3;
+  --border:      #e0e0e0;
+  --border-hover:#c8c8c8;
+
+  --fg:          #111111;
+  --fg-2:        #555555;
+  --fg-muted:    #999999;
+
+  --accent:      #111111;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--fg);
+  margin: 0;
+}
+
+p { margin: 0; color: var(--fg-2); }
+
+a {
+  color: var(--fg);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+code, kbd, pre {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+}
+
+::selection {
+  background: rgba(128,128,128,0.3);
+}
