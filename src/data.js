@@ -6,6 +6,7 @@ export const LINKS = {
   github: 'https://github.com/Itsnishant4',
   linkedin: 'https://www.linkedin.com/in/nishant-patel-295203283/',
   youtube: 'https://www.youtube.com/@codewithnishant4',
+  whatsapp: 'https://wa.me/919773005701?text=Hi%20Nishant%2C%20I%20found%20your%20portfolio%20and%20have%20a%20project%20in%20mind.',
 };
 
 /* All projects — used on Home (subset) and full Projects page  */
@@ -22,6 +23,7 @@ export const FULL_STACK_PROJECTS = [
     ],
     stack: ['React.js', 'Next.js', 'OpenAI API', 'MongoDB', 'TypeScript', 'Tailwind CSS'],
     live: 'https://aitodocrm.in',
+    icon: 'https://www.google.com/s2/favicons?domain=aitodocrm.in&sz=64',
     liveLabel: 'Live',
   },
   {
@@ -36,6 +38,7 @@ export const FULL_STACK_PROJECTS = [
     ],
     stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     live: 'https://leadspotter.in',
+    icon: 'https://www.google.com/s2/favicons?domain=leadspotter.in&sz=64',
     liveLabel: 'Live',
   },
   {
@@ -50,11 +53,27 @@ export const FULL_STACK_PROJECTS = [
     ],
     stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     live: 'https://team11ai.in',
+    icon: 'https://www.google.com/s2/favicons?domain=team11ai.in&sz=64',
+    liveLabel: 'Live',
+  },
+  {
+    index: '04',
+    name: 'TeslaCRM',
+    type: 'Full-Stack',
+    year: '2025',
+    desc: 'Detailed custom CRM built for teslacrm.io — pipelines, customer records, and team workflows tailored to the company.',
+    points: [
+      'Custom CRM modules for leads, customers, and day-to-day sales workflows.',
+      'Role-based access with Supabase auth and real-time data updates.',
+    ],
+    stack: ['React.js', 'Node.js', 'Express.js', 'Supabase', 'Tailwind CSS'],
+    live: 'https://teslacrm.io',
+    icon: 'https://www.google.com/s2/favicons?domain=teslacrm.io&sz=64',
     liveLabel: 'Live',
   },
 ];export const BACKEND_PROJECTS = [
   {
-    index: '04',
+    index: '05',
     name: 'NSM Roadways CRM',
     type: 'Full-Stack',
     year: '2025',
@@ -65,10 +84,11 @@ export const FULL_STACK_PROJECTS = [
     ],
     stack: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'TypeScript'],
     live: 'https://nsmadmin.nsmroadways.com',
+    icon: 'https://www.google.com/s2/favicons?domain=nsmadmin.nsmroadways.com&sz=64',
     liveLabel: 'Live',
   },
   {
-    index: '05',
+    index: '06',
     name: 'Kasba Natural',
     type: 'Backend',
     year: '2025',
@@ -79,10 +99,11 @@ export const FULL_STACK_PROJECTS = [
     ],
     stack: ['Laravel', 'MySQL', 'Tailwind CSS'],
     live: 'https://kasbanatural.com',
+    icon: 'https://www.google.com/s2/favicons?domain=kasbanatural.com&sz=64',
     liveLabel: 'Live',
   },
   {
-    index: '06',
+    index: '07',
     name: 'Onboarding Screen React',
     type: 'Library',
     year: '2025',
@@ -93,6 +114,7 @@ export const FULL_STACK_PROJECTS = [
     ],
     stack: ['React', 'NPM', 'TypeScript', 'Tailwind CSS'],
     live: 'https://www.npmjs.com/package/onbording-screen-react',
+    icon: 'https://www.google.com/s2/favicons?domain=www.npmjs.com&sz=64',
     liveLabel: 'NPM',
   },
 ];

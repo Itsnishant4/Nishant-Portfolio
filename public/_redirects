@@ -1,0 +1,3 @@
+/* Fallback for Netlify / Cloudflare Pages / GitHub Pages-style static hosts */
+ /projects  /index.html  200
+ /oss       /index.html  200
