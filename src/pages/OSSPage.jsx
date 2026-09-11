@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { LINKS } from '../data.js';
+import usePageMeta from '../hooks/usePageMeta.js';
 
 /* ─── Live GitHub data for the portfolio owner, grouped by repo owner ─── */
 const GITHUB_USER = 'Itsnishant4';
@@ -127,6 +128,32 @@ function OrgBlock({ org, tab }) {
     );
 }
 
+function OSSSkeleton() {
+    return (
+        <div aria-hidden="true">
+            {[0, 1].map((b) => (
+                <div className="oss2-org" key={b}>
+                    <div className="oss2-org-header">
+                        <div className="oss2-org-left">
+                            <span className="sk sk-avatar" />
+                            <span className="sk sk-line" style={{ width: '140px' }} />
+                        </div>
+                        <span className="sk sk-badge" />
+                    </div>
+                    <div className="oss2-rows">
+                        {[0, 1, 2].map((r) => (
+                            <div className="oss2-row" key={r}>
+                                <span className="sk sk-icon" />
+                                <span className="sk sk-line" style={{ width: `${72 - r * 14}%` }} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
+}
+
 function Footer() {
     return (
         <footer className="footer">
@@ -144,6 +171,7 @@ function Footer() {
 }
 
 export default function OSSPage() {
+    usePageMeta({ title: 'Open Source — Nishant Patel', description: 'Open-source contributions by Nishant Patel, synced live from GitHub.', path: '/oss' });
     const [tab, setTab] = useState('all');
     const [orgsData, setOrgsData] = useState(FALLBACK_ORGS);
     const [loading, setLoading] = useState(false);
@@ -229,16 +257,6 @@ export default function OSSPage() {
                                     <span className="live-dot" />
                                     {isLive ? `Live from GitHub ${lastUpdated ? `(${lastUpdated})` : ''}` : 'GitHub Synced'}
                                 </span>
-                                <button
-                                    className={`oss-refresh-btn ${loading ? 'spinning' : ''}`}
-                                    onClick={fetchLiveItems}
-                                    title="Sync live data from GitHub"
-                                    disabled={loading}
-                                >
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2" />
-                                    </svg>
-                                </button>
                             </div>
                         </div>
 
@@ -260,6 +278,7 @@ export default function OSSPage() {
                                 <a href={`https://github.com/${GITHUB_USER}`} target="_blank" rel="noopener noreferrer">GitHub @{GITHUB_USER}</a>.
                             </p>
                         )}
+                        {loading && totalAll === 0 && <OSSSkeleton />}
                         {orgsData.map((org) => (
                             <OrgBlock key={org.key || org.name} org={org} tab={tab} />
                         ))}

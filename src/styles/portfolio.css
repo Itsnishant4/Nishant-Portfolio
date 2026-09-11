@@ -108,8 +108,8 @@
   place-items: center;
   width: 32px;
   height: 32px;
-  border: 1px solid var(--border);
   border-radius: var(--r);
+  border: none;
   background: transparent;
   cursor: pointer;
   color: var(--fg-2);
@@ -119,7 +119,6 @@
 .theme-toggle:hover {
   background: var(--bg-subtle);
   color: var(--fg);
-  border-color: var(--border-hover);
 }
 
 .theme-toggle svg {
@@ -900,4 +899,31 @@
   to {
     transform: rotate(360deg);
   }
-}
+}
+/* ---------- OSS skeleton loading ---------- */
+.sk { display: block; border-radius: 6px; background: linear-gradient(90deg, var(--bg-subtle) 25%, var(--border) 50%, var(--bg-subtle) 75%); background-size: 200% 100%; animation: sk-shimmer 1.2s ease-in-out infinite; }
+.sk-avatar { width: 24px; height: 24px; }
+.sk-line { height: 14px; }
+.sk-badge { width: 150px; height: 20px; border-radius: 999px; }
+.sk-icon { width: 16px; height: 16px; flex-shrink: 0; }
+@keyframes sk-shimmer { to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .sk { animation: none; } }
+
+/* ---------- Nav brand logo ---------- */
+.nav-brand { display: inline-flex; align-items: center; gap: 8px; }
+.nav-brand img { width: 26px; height: 26px; border-radius: 6px; }
+
+
+/* ---------- Nav Hire-Me button ---------- */
+.nav-hire { display: inline-flex; align-items: center; background: transparent; color: var(--fg); font-size: 0.88rem; padding: 6px 10px; border: 1px solid var(--border-hover); border-radius: var(--r); white-space: nowrap; }
+.nav-hire:hover { text-decoration: none; border-color: var(--fg); }
+@media (max-width: 640px) { .nav-hire { padding: 7px 11px; } }
+
+/* ---------- Project favicon icons ---------- */
+.project-name { display: inline-flex; align-items: center; gap: 8px; }
+.project-icon { width: 20px; height: 20px; border-radius: 5px; flex-shrink: 0; }
+
+/* ---------- Contribution graph skeleton ---------- */
+.sk-cell { animation: sk-pulse 1.2s ease-in-out infinite; }
+@keyframes sk-pulse { 50% { opacity: 0.4; } }
+@media (prefers-reduced-motion: reduce) { .sk-cell { animation: none; } }

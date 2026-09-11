@@ -51,6 +51,32 @@ export default function GitHubContributions({ username }) {
             .catch(() => setError(true));
     }, [username]);
 
+    /* ── SVG layout constants (hooks-safe: run on every render) ── */
+    const CELL = 11;      // cell size
+    const GAP = 2;       // gap between cells
+    const STEP = CELL + GAP;
+    const DAY_LABEL_W = 26;
+    const TOP_LABEL_H = 16;
+
+    const safeWeeks = weeks || [];
+    const numWeeks = safeWeeks.length;
+    const svgW = DAY_LABEL_W + numWeeks * STEP;
+    const svgH = TOP_LABEL_H + 7 * STEP;
+
+    const fills = getFills(theme);
+
+    
+
+    /* Build month labels from week index */
+    const monthLabels = [];
+    let lastMonth = -1;
+    safeWeeks.forEach((week, wi) => {
+        const first = week.find(Boolean);
+        if (!first) return;
+        const m = new Date(first.date).getMonth();
+        if (m !== lastMonth) { monthLabels.push({ wi, label: MONTHS[m] }); lastMonth = m; }
+    });
+
     /* ── Loading / error states ── */
     if (error) return (
         <section className="section">
@@ -68,33 +94,18 @@ export default function GitHubContributions({ username }) {
         <section className="section">
             <div className="container">
                 <div className="section-title">Contributions</div>
-                <p style={{ fontSize: '0.85rem', color: 'var(--fg-muted)' }}>Loading…</p>
+                <svg viewBox="0 0 715 107" width="100%" style={{ display: 'block', maxWidth: '100%' }} aria-hidden="true">
+                    {Array.from({ length: 53 }).map((_, wi) =>
+                        Array.from({ length: 7 }).map((_, di) => (
+                            <rect key={`${wi}-${di}`} x={26 + wi * 13} y={16 + di * 13} width={11} height={11} rx={2} fill="var(--bg-subtle)" className="sk-cell" style={{ animationDelay: `${((wi + di) % 7) * 0.15}s` }} />
+                        ))
+                    )}
+                </svg>
+                <p style={{ fontSize: '0.85rem', color: 'var(--fg-muted)', marginTop: '8px' }}>Loading contributions…</p>
             </div>
         </section>
     );
 
-    /* ── SVG layout constants ── */
-    const CELL = 11;      // cell size
-    const GAP = 2;       // gap between cells
-    const STEP = CELL + GAP;
-    const DAY_LABEL_W = 26;
-    const TOP_LABEL_H = 16;
-
-    const numWeeks = weeks.length;
-    const svgW = DAY_LABEL_W + numWeeks * STEP;
-    const svgH = TOP_LABEL_H + 7 * STEP;
-
-    const fills = getFills(theme);
-
-    /* Build month labels from week index */
-    const monthLabels = [];
-    let lastMonth = -1;
-    weeks.forEach((week, wi) => {
-        const first = week.find(Boolean);
-        if (!first) return;
-        const m = new Date(first.date).getMonth();
-        if (m !== lastMonth) { monthLabels.push({ wi, label: MONTHS[m] }); lastMonth = m; }
-    });
 
     return (
         <section className="section">

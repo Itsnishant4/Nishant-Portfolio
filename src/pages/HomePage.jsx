@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { LINKS, HOME_PROJECTS, EXPERIENCE, SKILLS, FACTS, COURSEWORK } from '../data.js';
+import usePageMeta from '../hooks/usePageMeta.js';
 import { Github, LinkedIn, Mail, ExternalLink } from '../components/Icons.jsx';
 import GitHubContributions from '../components/GitHubContributions.jsx';
 
@@ -53,6 +54,10 @@ function FindMe() {
                         <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer">nishant-patel</a>
                     </div>
                     <div className="find-me-item">
+                        <span className="fm-label">WhatsApp</span>
+                        <a href={LINKS.whatsapp} target="_blank" rel="noopener noreferrer">+91 97730 05701</a>
+                    </div>
+                    <div className="find-me-item">
                         <span className="fm-label">YouTube</span>
                         <a href={LINKS.youtube} target="_blank" rel="noopener noreferrer">@codewithnishant4</a>
                     </div>
@@ -66,7 +71,7 @@ function ProjectCard({ p }) {
     return (
         <div className="project-item">
             <div className="project-top">
-                <span className="project-name">{p.name}</span>
+                <span className="project-name">{p.icon && (<img className="project-icon" src={p.icon} alt="" loading="lazy" onError={(e) => { e.currentTarget.style.display = 'none'; }} />)}{p.name}</span>
                 <div className="project-meta">
                     <span className="project-year">{p.year}</span>
                 </div>
@@ -205,6 +210,7 @@ function Footer() {
 }
 
 export default function HomePage() {
+    usePageMeta({ title: 'Nishant Patel — Full Stack Developer', description: 'Nishant Patel, Full Stack Developer from Rajkot, India. MERN stack apps, Laravel platforms, Shopify e-commerce, React Native apps.', path: '/' });
     return (
         <div className="shell">
             <div className="page-content">

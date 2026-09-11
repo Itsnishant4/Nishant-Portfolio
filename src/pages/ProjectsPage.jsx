@@ -1,11 +1,12 @@
 import { FULL_STACK_PROJECTS, BACKEND_PROJECTS, LINKS } from '../data.js';
+import usePageMeta from '../hooks/usePageMeta.js';
 import { Github, ExternalLink } from '../components/Icons.jsx';
 
 function ProjectCard({ p }) {
     return (
         <div className="project-item">
             <div className="project-top">
-                <span className="project-name">{p.name}</span>
+                <span className="project-name">{p.icon && (<img className="project-icon" src={p.icon} alt="" loading="lazy" onError={(e) => { e.currentTarget.style.display = 'none'; }} />)}{p.name}</span>
                 <div className="project-meta">
                     <span className="project-year">{p.year}</span>
                 </div>
@@ -54,6 +55,7 @@ function Footer() {
 }
 
 export default function ProjectsPage() {
+    usePageMeta({ title: 'Projects — Nishant Patel', description: 'Projects by Nishant Patel: AiTodoCRM, LeadSpotter, Team11AI, TeslaCRM, NSM Roadways CRM and more.', path: '/projects' });
     return (
         <div className="shell">
             <div className="page-content">
