@@ -927,3 +927,15 @@
 .sk-cell { animation: sk-pulse 1.2s ease-in-out infinite; }
 @keyframes sk-pulse { 50% { opacity: 0.4; } }
 @media (prefers-reduced-motion: reduce) { .sk-cell { animation: none; } }
+
+/* ---------- Mobile nav ---------- */
+.nav-menu-btn { display: none; flex-direction: column; align-items: center; justify-content: center; gap: 4px; width: 32px; height: 32px; background: transparent; border: none; cursor: pointer; margin-left: 4px; }
+.nav-menu-btn span { display: block; width: 18px; height: 2px; border-radius: 2px; background: var(--fg); }
+.nav-menu { display: none; }
+@media (max-width: 640px) {
+  .nav-right .nav-link, .nav-right .nav-hire { display: none; }
+  .nav-menu-btn { display: flex; }
+  .nav-menu { display: flex; position: absolute; top: var(--nav-h); left: 0; right: 0; flex-direction: column; background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px var(--gutter) 14px; gap: 2px; }
+  .nav-menu .nav-link { padding: 10px 4px; font-size: 1rem; }
+  .nav-menu .nav-hire { margin-top: 8px; justify-content: center; padding: 10px; }
+}
